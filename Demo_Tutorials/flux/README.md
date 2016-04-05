@@ -32,3 +32,6 @@ Before ordering for a flux allocation, see [Flux configuration](http://arc-ts.um
 | Standard Memory Flux core     |  one compute core with 4GB RAM | $6.60 per core/month |
 | Large Memory Flux      | about 25GB per core,  or 1TB in a 40-core node     |  $13.30 per core/month |
 | Flux GPUs | FLUX has 40 NVIDIA K20x GPUs available      |    $60 per month |
+
+## Submit a job via qsub
+You can follow the [FLUX IN 10 EASY STEPS](http://arc-ts.umich.edu/flux/using-flux/flux-in-10-easy-steps/)
