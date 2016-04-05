@@ -1,0 +1,42 @@
+#!/bin/bash -l
+
+#PBS -N theano_example2
+
+#PBS -M tianpei@umich.edu
+
+#PBS -m abe
+
+#PBS -q flux
+
+#PBS -A mdatascienceteam_flux
+
+#PBS -l qos=preempt
+
+#PBS -V
+
+#PBS -l nodes=1:ppn=16:haswell,pmem=32gb,walltime=10:00:00
+
+cd $PBS_O_WORKDIR
+
+start=$(date)
+
+startSec=$(date +%s)
+
+
+module load anaconda3
+module load gcc/4.8.5
+
+python ./DeepLearningTutorials/code/mlp.py > log
+
+end=$(date)
+
+endSec=$(date +%s)
+
+DIFF=$(( $endSec - $startSec ))
+
+echo "Start Time:" $start
+
+echo "End Time:" $end
+
+echo "Time Used:" `date +%H:%M:%S -ud @${DIFF}`
+

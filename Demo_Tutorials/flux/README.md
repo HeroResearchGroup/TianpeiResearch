@@ -122,12 +122,18 @@ Make sure to edit the file to include your own uniqname first.
 ## Get files
 In terminal (Linux or Mac), you can use `scp` method to get file. Note that the transfer node is different from the log-in node. 
 
+copy from local to server
 ```
 % scp localfile uniqname@flux-xfer.arc-ts.umich.edu:remotefile (copy a file)
 ```
 or
 ```
 % scp -r localdir  uniqname@flux-xfer.arc-ts.umich.edu:remotedir    (copy an entire directory)
+```
+copy from server to local
+```
+scp uniquename@flux-xfer.arc-ts.umich.edu:remotefile localfile
+
 ```
 
 ## Check your available module
