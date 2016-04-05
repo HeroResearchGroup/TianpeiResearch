@@ -159,3 +159,6 @@ qdel  jobid
 
 If a job doesn’t start in within 30 minutes, send an email with a copy of your PBS script and the job number to `flux-support@umich.edu`.  Do not delete the job.
 ```
+
+## Get output
+When your job is completed, you will receive an email from flux. Check if the job is done successfully. 
