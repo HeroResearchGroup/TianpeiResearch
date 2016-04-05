@@ -29,6 +29,6 @@ Before ordering for a flux allocation, see [Flux configuration](http://arc-ts.um
 
 | Resources                     |  Configuration   |  Price  |
 | ----------------------------- |:-------------:| -----:|
-| Standard memory Flux core     |  one compute core with 4GB RAM | $6.60 per core/month |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Standard Memory Flux core     |  one compute core with 4GB RAM | $6.60 per core/month |
+| Large Memory Flux      | about 25GB per core,  or 1TB in a 40-core node     |  $13.30 per core/month |
+| Flux GPUs | FLUX has 40 NVIDIA K20x GPUs available      |    $60 per month |
