@@ -27,3 +27,8 @@ in.
 ## FLUX Configuration
 Before ordering for a flux allocation, see [Flux configuration](http://arc-ts.umich.edu/flux/flux-configuration/)
 
+| Resources                     |  Configuration   |  Price  |
+| ----------------------------- |:-------------:| -----:|
+| Standard memory Flux core     |  one compute core with 4GB RAM | $6.60 per core/month |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
