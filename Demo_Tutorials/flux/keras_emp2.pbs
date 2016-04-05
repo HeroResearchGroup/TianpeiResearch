@@ -1,0 +1,41 @@
+#!/bin/bash -l
+
+#PBS -N keras_example2
+
+#PBS -M tianpei@umich.edu
+
+#PBS -m abe
+
+#PBS -q flux
+
+#PBS -A mdatascienceteam_flux
+
+#PBS -l qos=preempt
+
+#PBS -V
+
+#PBS -l nodes=1:ppn=4,pmem=8gb,walltime=10:00:00
+
+cd $PBS_O_WORKDIR
+
+start=$(date)
+
+startSec=$(date +%s)
+                                                              1,1           Top
+module load anaconda3
+module load gcc/4.8.5
+
+THEANO_FLAGS='gcc.cxxflags=-march=corei7-avx,floatX=float32'  python ./keras/examples/mnist_cnn.py > log
+
+end=$(date)
+
+endSec=$(date +%s)
+
+DIFF=$(( $endSec - $startSec ))
+
+echo "Start Time:" $start
+
+echo "End Time:" $end
+
+echo "Time Used:" `date +%H:%M:%S -ud @${DIFF}`
+
