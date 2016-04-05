@@ -124,15 +124,15 @@ In terminal (Linux or Mac), you can use `scp` method to get file. Note that the 
 
 copy from local to server
 ```
-% scp localfile uniqname@flux-xfer.arc-ts.umich.edu:remotefile (copy a file)
+  scp localfile uniqname@flux-xfer.arc-ts.umich.edu:remotefile (copy a file)
 ```
 or
 ```
-% scp -r localdir  uniqname@flux-xfer.arc-ts.umich.edu:remotedir    (copy an entire directory)
+  scp -r localdir  uniqname@flux-xfer.arc-ts.umich.edu:remotedir    (copy an entire directory)
 ```
 copy from server to local
 ```
-scp uniquename@flux-xfer.arc-ts.umich.edu:remotefile localfile
+  scp uniquename@flux-xfer.arc-ts.umich.edu:remotefile localfile
 
 ```
 
