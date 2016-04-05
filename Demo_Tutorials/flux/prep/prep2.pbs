@@ -1,0 +1,21 @@
+#!/bin/sh 
+
+#PBS -V 
+#PBS -S /bin/sh 
+#PBS -N prep2
+#PBS -A FluxTraining_flux
+#PBS -l qos=flux
+#PBS -q flux
+#PBS -l pmem=3750mb
+#PBS -l nodes=1:ppn=12
+#PBS -M cja@umich.edu 
+#PBS -m abe 
+#PBS -j oe 
+
+# Navigate to the directory submitted from
+if [ -n "$PBS_O_WORKDIR" ]; then cd $PBS_O_WORKDIR; fi
+pwd
+ 
+# Execute the commands
+
+time matlab -r prep2

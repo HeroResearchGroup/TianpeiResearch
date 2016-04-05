@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+### Assignment:
+### Create a PBS script file here to run the commands in prep2.m
+###
+### Bonus:  if you already know how, try to make prep2.m run faster
+### in MATLAB by leveraging implicit parallelism.  (No need to change
+### prep2.m here.)  How much faster is it?
