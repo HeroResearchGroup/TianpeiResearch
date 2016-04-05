@@ -125,3 +125,37 @@ In terminal (Linux or Mac), you can use `scp` method to get file. Note that the 
 ```
 % scp localfile uniqname@flux-xfer.arc-ts.umich.edu:remotefile (copy a file)
 ```
+or
+```
+% scp -r localdir  uniqname@flux-xfer.arc-ts.umich.edu:remotedir    (copy an entire directory)
+```
+
+## Check your available module
+Use `module` command to load software. 
+```
+module avail
+module list
+module load modulename    (eg module load R)
+module unload modulename    (eg module unload R)
+```
+## Submit, Delete and Check jobs
+Submitting your Job:
+```
+qsub filename.pbs    (eg qsub sample.pbs … outputs jobid on successful submission)
+```
+
+Checking the status of your Job:
+```
+For a single job: qstat jobid     OR  
+checkjob  jobid   (just the numeric portion)
+```
+
+To see all of your jobs: `qstat -u uniqname`  OR `showq -w user=uniqname`
+
+Deleting your job:
+```
+qdel  jobid
+```
+
+If a job doesn’t start in within 30 minutes, send an email with a copy of your PBS script and the job number to `flux-support@umich.edu`.  Do not delete the job.
+```
