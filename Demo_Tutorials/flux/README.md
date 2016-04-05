@@ -117,3 +117,11 @@ Make sure to edit the file to include your own uniqname first.
   interactive sessions when you need to debug or play around with
   data. If you use too much computation time on the login nodes Flux
   will kick you off.
+
+
+## Get files
+In terminal (Linux or Mac), you can use `scp` method to get file. Note that the transfer node is different from the log-in node. 
+
+```
+% scp localfile uniqname@flux-xfer.arc-ts.umich.edu:remotefile (copy a file)
+```
