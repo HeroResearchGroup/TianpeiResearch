@@ -23,3 +23,7 @@ If you use a Windows machine, you can use
 
 You'll be prompted for both an MToken code and a password when you log
 in.
+
+## FLUX Configuration
+Before ordering for a flux allocation, see [Flux configuration](http://arc-ts.umich.edu/flux/flux-configuration/)
+
