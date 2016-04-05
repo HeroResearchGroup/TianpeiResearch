@@ -2,10 +2,8 @@
 Created by Tianpei Xie. 04/04/2016
 
 Last Edited  04/04/2016
+## G2Pnet
 
-## Overview
-This is the demo codes for tutorials and presentations in Hero's Group
-
-### FLUX usage
-Edited 04/04/2016
+## Demo and Tutorials
+[See links](https://github.com/HeroResearchGroup/TianpeiResearch/tree/master/Demo_Tutorials)
 
